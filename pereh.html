@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страшный сайт</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            color: crimson;
+            text-shadow: 0 0 10px red, 0 0 20px crimson;
+            animation: flicker 2s infinite;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            background-color: darkred;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+            box-shadow: 0 0 10px red, 0 0 20px crimson;
+        }
+
+        .btn:hover {
+            background-color: crimson;
+            box-shadow: 0 0 20px darkred, 0 0 40px crimson;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            70% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Хочешь узнать правду?</h1>
+        <button class="btn" onclick="window.location.href='https://siplasisya.github.io/what-is-it/'">Узнать</button>
+    </div>
+</body>
+</html>
